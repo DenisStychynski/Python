@@ -24,14 +24,14 @@ A = 3; B = 5 -> 243 (3⁵)
 2 2
     4 '''
 
-# a = int(input("Введите первое неотрицительное число: "))
-# b = int(input("Введите второе неотрицательно число: "))
+a = int(input("Введите первое неотрицительное число: "))
+b = int(input("Введите второе неотрицательно число: "))
 
 
-# def recursive_sum(a, b):
-#     if a == 0:
-#         return b
-#     else:
-#         return recursive_sum(a - 1, b + 1)
+def recursive_sum(a, b):
+    if a == 0:
+        return b
+    else:
+        return recursive_sum(a - 1, b + 1)
 
-# print(recursive_sum(a, b))
+print(recursive_sum(a, b))
