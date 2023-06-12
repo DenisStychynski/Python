@@ -39,20 +39,20 @@
 собрать за один заход собирающий модуль, находясь перед некоторым кустом
 заданной во входном файле грядки.
 4 -> 1 2 3 4'''
-# n = int(input('Введите количество грядок: '))
-# if n < 3: print('Грядок должно быть больше двух')
-# else:
-#     arr = []
-#     for i in range(n):
-#         arr.append(int(input('Введите количество ягод: ')))
+n = int(input('Введите количество грядок: '))
+if n < 3: print('Грядок должно быть больше двух')
+else:
+    arr = []
+    for i in range(n):
+        arr.append(int(input('Введите количество ягод: ')))
 
-#     firstNum = arr[0] + arr[1] + arr[n-1]
-#     lastNum = arr[0] + arr[n-2] + arr[n-1]
-#     maxNum = 0
-#     if firstNum > lastNum:
-#         maxNum = firstNum
-#     else: maxNum = lastNum    
-#     for i in range(1, n-1):
-#         if maxNum < arr[i] + arr[i-1] + arr[i+1]:
-#             maxNum = arr[i] + arr[i-1] + arr[i+1]
-#     print(maxNum)
+    firstNum = arr[0] + arr[1] + arr[n-1]
+    lastNum = arr[0] + arr[n-2] + arr[n-1]
+    maxNum = 0
+    if firstNum > lastNum:
+        maxNum = firstNum
+    else: maxNum = lastNum    
+    for i in range(1, n-1):
+        if maxNum < arr[i] + arr[i-1] + arr[i+1]:
+            maxNum = arr[i] + arr[i-1] + arr[i+1]
+    print(maxNum)
